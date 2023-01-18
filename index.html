@@ -21,8 +21,9 @@
 </head>
 <body>
     <div id="root">
+        <h1 id="title-list">Lista di Emails</h1>
         <ul class="email-list">
-            <li> {{emailList}} </li>
+            <li v-for="email in emailList"> {{email}} </li>
         </ul>
 
     </div>

@@ -4,8 +4,13 @@
     box-sizing: border-box;
 }
 
+#title-list{
+    margin: 1rem 3rem;
+    font-size: 35px;
+}
+
 .email-list{
-    margin: 3rem;
+    margin: 1rem 3rem;
     color: dodgerblue;
     font-size: 25px;
 }

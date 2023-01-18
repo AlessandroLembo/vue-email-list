@@ -20,12 +20,22 @@ const app = Vue.createApp({
         }
     },
 
+    methods:{
+        getRandomEmails(){
+            axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
+            .then((response) => {
+              this.emailList.push(response.data.response);
+         });
+        }
+    },
+
     created(){
-        axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
-        .then((response) => {
-          this.emailList = response.data.response;
-  });
+       for(let i = 0; i < 10; i++){
+        this.getRandomEmails();
+       }
     }
+
+
 });
 
 app.mount('#root');
