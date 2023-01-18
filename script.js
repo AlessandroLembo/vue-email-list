@@ -17,6 +17,7 @@ const app = Vue.createApp({
     data(){
         return{ 
            emailList: [],
+           emailNumbers: 10,
         }
     },
 
