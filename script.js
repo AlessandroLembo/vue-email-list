@@ -16,16 +16,20 @@ Riusciamo a gestire e mostrare un loader mentre le mail non sono ancora tutte pr
 const app = Vue.createApp({
     data(){
         return{ 
-
+           
         }
+    },
+
+    mounted(){
+        axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
+        .then((response) => {
+          console.log(response.data);
+  });
     }
 });
 
 app.mount('#root');
 
-axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
-  .then((response) => {
-     console.log(response);
-  });
+
 
 
