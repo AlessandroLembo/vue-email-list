@@ -4,3 +4,8 @@
     box-sizing: border-box;
 }
 
+.email-list{
+    margin: 3rem;
+    color: dodgerblue;
+    font-size: 25px;
+}
