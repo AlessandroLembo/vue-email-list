@@ -22,7 +22,7 @@
 <body>
     <div id="root">
         <h1 id="title-list">Lista di Emails</h1>
-        <ul class="email-list">
+        <ul v-if="emailList.length === 10" class="email-list">
             <li v-for="email in emailList"> {{email}} </li>
         </ul>
 
