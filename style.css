@@ -9,8 +9,15 @@
     font-size: 35px;
 }
 
+.loading{
+    margin: 1rem 3rem;
+    color: coral;
+    font-size: 30px;
+}
+
 .email-list{
     margin: 1rem 3rem;
     color: dodgerblue;
     font-size: 25px;
 }
+
