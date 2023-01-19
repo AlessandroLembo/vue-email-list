@@ -32,7 +32,7 @@ const app = Vue.createApp({
 
     created(){
        for(let i = 0; i < this.emailNumbers; i++){
-        this.getRandomEmails();
+        this.getRandomEmail();
        }
     }
 
