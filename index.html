@@ -24,11 +24,14 @@
 </head>
 <body>
     <div id="root">
-        <h1 id="title-list">Lista di Emails</h1>
-        <i v-if="emailList.length < emailNumbers" class="fa-solid fa-spin fa-spinner loading"></i>
-        <ul v-else class="email-list">
-            <li v-for="email in emailList"> {{email}} </li>
-        </ul>
+        <div class="container">
+
+            <h1 id="title-list">Lista di Emails</h1>
+            <i v-if="emailList.length < emailNumbers" class="fa-solid fa-spin fa-spinner loading"></i>
+            <ul v-else class="email-list">
+                <li v-for="email in emailList" class="email"> {{email}} </li>
+            </ul>
+        </div>
 
     </div>
     

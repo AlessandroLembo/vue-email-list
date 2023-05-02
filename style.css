@@ -4,6 +4,19 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: lightgray;
+}
+
+.container{
+    max-width: 1400px;
+    margin: 2rem auto;
+    text-align: center;
+    background-color: burlywood;
+    height: 900px;
+    padding: 3rem;
+}
+
 #title-list{
     margin: 1rem 3rem;
     font-size: 35px;
@@ -11,13 +24,15 @@
 
 .loading{
     margin: 1rem 3rem;
-    color: coral;
+    color: darkcyan;
     font-size: 30px;
 }
 
 .email-list{
     margin: 1rem 3rem;
-    color: dodgerblue;
     font-size: 25px;
 }
 
+.email{
+    list-style-type: none;
+}
